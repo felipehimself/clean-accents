@@ -10,6 +10,6 @@ export const cleanAccents = {
    * Check if a given string has accents.
    */
   has: function (str: string) {
-    return /[^\u0000-\u007E]/.test(str);
+    return /[\u0300-\u036f]/.test(str.normalize("NFD"));
   },
 };

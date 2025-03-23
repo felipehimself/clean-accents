@@ -35,7 +35,7 @@ yarn add clean-accents
 ```
 import { cleanAccents } from "clean-accents";
 // or
-const cleanAccents = require('cleanAccents');
+const { cleanAccents } = require("clean-accents");
 
 
 const str = `àáâãäåāăąèéêëēėęěìíîïīįòóôõöōőùúûüūůűýÿçćčďğģńñňřśšşťžźżÀÁÂÃÄÅĀĂĄÈÉÊËĒĖĘĚÌÍÎÏĪĮÒÓÔÕÖŌŐÙÚÛÜŪŮŰÝŸÇĆČĎĞĢŃÑŇŘŚŠŞŤŽŹŻ`
@@ -54,7 +54,7 @@ aaaaaaaaaeeeeeeeeiiiiiiooooooouuuuuuuyycccdggnnnrssstzzzAAAAAAAAAEEEEEEEEIIIIIIO
 ```
 import { cleanAccents } from "clean-accents";
 // or
-const cleanAccents = require('cleanAccents');
+const { cleanAccents } = require("clean-accents");
 
 
 const str = `àáâãäåāăąèéêëēėęěìíîïīįòóôõöōőùúûüūůűýÿçćčďğģńñňřśšşťžźżÀÁÂÃÄÅĀĂĄÈÉÊËĒĖĘĚÌÍÎÏĪĮÒÓÔÕÖŌŐÙÚÛÜŪŮŰÝŸÇĆČĎĞĢŃÑŇŘŚŠŞŤŽŹŻ`
