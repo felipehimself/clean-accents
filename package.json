@@ -1,0 +1,72 @@
+{
+  "name": "clean-accents",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A utility package for removing accents from string and checking if it has accents.",
+  "type": "module",
+  "scripts": {
+    "build:link": "tsup && cd lib && npm link && cd ..",
+    "build:dev": "rm -rf lib && tsup",
+    "build:prod": "tsup",
+    "yalc": "yalc publish"
+  },
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "path": "^0.12.7",
+    "tsup": "^8.4.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.0.9"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "accent",
+    "accents",
+    "remove",
+    "diacritic",
+    "clean",
+    "formatting",
+    "umlaut",
+    "grave",
+    "circumflex",
+    "tilde",
+    "diaeresis",
+    "acute",
+    "c cedilha",
+    "string",
+    "til",
+    "macron",
+    "caron",
+    "cedilla",
+    "breve",
+    "ogonek",
+    "normalize",
+    "unicode",
+    "deaccent",
+    "strip accents",
+    "diacritical marks",
+    "text processing",
+    "latin letters"
+  ],
+  "author": {
+    "name": "Felype Couto",
+    "url": "https://fcouto.dev"
+  },
+  "license": "MIT"
+}
