@@ -5,10 +5,11 @@
   "description": "A utility package for removing accents from string and checking if it has accents.",
   "type": "module",
   "scripts": {
-    "build:link": "tsup && cd lib && npm link && cd ..",
+    "build:link": "rm -rf lib && tsup && cd lib && npm link && cd ..",
     "build:dev": "rm -rf lib && tsup",
     "build:prod": "tsup",
-    "yalc": "yalc publish"
+    "publish:local": "yalc publish",
+    "test": "vitest"
   },
   "main": "./lib/index.cjs",
   "module": "./lib/index.js",
@@ -68,5 +69,13 @@
     "name": "Felype Couto",
     "url": "https://fcouto.dev"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipehimself/clean-accents.git"
+  },
+  "homepage": "https://github.com/felipehimself/clean-accents#readme",
+  "bugs": {
+    "url": "https://github.com/felipehimself/clean-accents/issues"
+  }
 }
