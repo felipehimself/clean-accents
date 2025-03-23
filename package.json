@@ -1,7 +1,7 @@
 {
   "name": "clean-accents",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A utility package for removing accents from string and checking if it has accents.",
   "type": "module",
   "scripts": {
